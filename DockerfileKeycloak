@@ -2,11 +2,11 @@ FROM quay.io/keycloak/keycloak:latest
 
 # Nastavenie prostredia (môžete použiť ENV na prenos hodnôt ako environment variables)
 ENV DB_VENDOR=postgres
-ENV DB_ADDR=admin:QfBNuF0h89AgJ1S9AvIiv4Gd0REXHEKH@dpg-ct9248a3esus73d8u9ag-a.frankfurt-postgres.render.com
-ENV DB_DATABASE=keycloak
-ENV DB_USER=keycloak
-ENV DB_PASSWORD=keycloak
+ENV DB_ADDR=dpg-ct9au4t6l47c73apo7v0-a.frankfurt-postgres.render.com
+ENV DB_DATABASE=keycloak_z6gb
+ENV DB_USER=admin
+ENV DB_PASSWORD=foPZKtzubyG8YbB6bkdq2IwtNN6flHWz
 ENV KC_DB_SCHEMA=kc
 
 # Spúšťací príkaz
-CMD ["start", "--db=postgres", "--db-url=jdbc:postgresql://admin:QfBNuF0h89AgJ1S9AvIiv4Gd0REXHEKH@dpg-ct9248a3esus73d8u9ag-a.frankfurt-postgres.render.com/keycloak", "--db-username=keycloak", "--db-password=keycloak", "--db-schema=kc"]
+CMD ["start", "--db=postgres", "--db-url=dpg-ct9au4t6l47c73apo7v0-a.frankfurt-postgres.render.com", "--db-username=admin", "--db-password=foPZKtzubyG8YbB6bkdq2IwtNN6flHWz", "--db-schema=kc"]
