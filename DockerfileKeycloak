@@ -8,6 +8,8 @@ FROM quay.io/keycloak/keycloak:latest
 # ENV DB_PASSWORD=foPZKtzubyG8YbB6bkdq2IwtNN6flHWz
 # ENV KC_DB_SCHEMA=kc
 
+EXPOSE 8080
+
 # Spúšťací príkaz
 #CMD ["start", "--db=postgres", "--db-url=dpg-ct9au4t6l47c73apo7v0-a.frankfurt-postgres.render.com", "--db-username=admin", "--db-password=foPZKtzubyG8YbB6bkdq2IwtNN6flHWz", "--db-schema=kc"]
 
